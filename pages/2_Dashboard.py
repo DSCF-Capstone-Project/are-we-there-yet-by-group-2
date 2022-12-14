@@ -4,6 +4,7 @@ st.set_page_config(page_title="Traffic Dashboard")
 
 st.markdown("# Dashboard")
 st.sidebar.header("Traffic Dashboard (Beta)")
+st.sidebar.markdown("#### This section shows you plots of some of our graphs and clustered segments of each route.")
 
 route_tab, traffic_tab = st.tabs(["Route Data", "Traffic Info"])
 
