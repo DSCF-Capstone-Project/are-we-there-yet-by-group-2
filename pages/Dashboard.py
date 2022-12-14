@@ -27,12 +27,12 @@ with traffic_tab:
     img_filename = cluster[:6]
     img_filename = img_filename.lower()
 
-    if cluster:
-        st.image('./media/'+ img_filename +'_clustered.png')
-    
     st.markdown("""
         * Cluster A (_FAST_) - **Blue**
         * Cluster B (_AVERAGE_) - **Green**
         * Cluster C (_SLOW_) - **Yellow**
         * Cluster D (_VERY SLOW_) - **Red**
     """)
+
+    if cluster:
+        st.image('./media/'+ img_filename +'_clustered.png')
